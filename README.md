@@ -1,7 +1,7 @@
 # PSUADE
 [The PSUADE Uncertainty Quantification Project](http://computation.llnl.gov/casc/uncertainty_quantification/) 
 
-*****************************************************************************
+```
 Copyright (c) 2007   Lawrence Livermore National Security, LLC.
 Produced at the Lawrence Livermore National Laboratory.
 Written by the PSUADE team.
@@ -29,8 +29,7 @@ BOSE, if used, are available under the StatLib licensing agreement.  A copy of
 this license is included in the "LICENSE_MARS" and "LICENSE_BOSE" files
 in the External/MARS and External/Bose directories, respectively, and 
 is also available online from http://lib.stat.cmu.edu/graphmod/submissions.
-
-*****************************************************************************
+```
 
 *****************************************************************************
 Author:      Charles Tong
@@ -39,22 +38,15 @@ Affiliation: Lawerence Livermore National Laboratory
 Date:        2013
 *****************************************************************************
 
-*****************************************************************************
-*****************************************************************************
-*** Quick Installation Guide 
------------------------------------------------------------------------------
-For problems with installation, contact
-
+# Quick Installation Guide 
+For problems with installation, contact:
 Charles Tong at tong10@llnl.gov, or
 James Leek at leek2@llnl.gov
-*****************************************************************************
-*****************************************************************************
 
 Below are 3 sections on building and installing PSUADE.  Each section is for
 a different Operating System.  1. Linux, 2. Windows, 3. MaxOSX
 
------------------------------------------------------------------------------
-1. Linux:
+## Linux:
 
 A. To install the PSUADE package, you need to make sure you have cmake on your
    system.  (cmake is open source software availible at www.cmake.org) 
@@ -116,9 +108,7 @@ F. You can build a package for other people to install by running 'make package'
 G. Now read the short manual in the Doc/Manual directory and follow the 
    instructions to get a simple application running within minutes.
 
------------------------------------------------------------------------------
-
-2. Windows
+## Windows
 
    Requires Cmake and mingw (preferably including gfortran).  If you want to build 
    an installable package you will need NSIS.
@@ -153,9 +143,7 @@ F. You can build a package for other people to install by running
 G. Now read the short manual in the Doc/Manual directory and follow the
    instructions to get a simple application running within minutes.
 
------------------------------------------------------------------------------
-
-3. MacOSX
+## MacOSX
 
    Requires cmake, and cc/gcc, c++/g++, gfortran >= 4.4.
 
@@ -203,8 +191,7 @@ G. You can build a package for other people to install by running 'make package'
 H. Now read the short manual in the Doc/Manual directory and follow the
    instructions to get a simple application running within minutes.
 
-*****************************************************************************
-Explanation of directories
+# Explanation of directories
 
 Examples : test programs 
 Src      : source code
