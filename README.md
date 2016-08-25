@@ -34,8 +34,7 @@ is also available online from http://lib.stat.cmu.edu/graphmod/submissions.
 *****************************************************************************
 Author:      Charles Tong
 
-Affiliation: Lawerence Livermore National Laboratory
-            
+Affiliation: Lawerence Livermore National Laboratory, 
              Center for Applied Scientific Computing
              
 Date:        2013
