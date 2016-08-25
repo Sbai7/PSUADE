@@ -1,6 +1,5 @@
-      SUBROUTINE CAXPY(N,CA,CX,INCX,CY,INCY)
+      COMPLEX FUNCTION CDOTU(N,CX,INCX,CY,INCY)
 *     .. Scalar Arguments ..
-      COMPLEX CA
       INTEGER INCX,INCY,N
 *     ..
 *     .. Array Arguments ..
@@ -10,7 +9,7 @@
 *  Purpose
 *  =======
 *
-*     CAXPY constant times a vector plus a vector.
+*     CDOTU forms the dot product of two vectors.
 *
 *  Further Details
 *  ===============
@@ -21,20 +20,18 @@
 *  =====================================================================
 *
 *     .. Local Scalars ..
+      COMPLEX CTEMP
       INTEGER I,IX,IY
 *     ..
-*     .. External Functions ..
-      REAL SCABS1
-      EXTERNAL SCABS1
-*     ..
+      CTEMP = (0.0,0.0)
+      CDOTU = (0.0,0.0)
       IF (N.LE.0) RETURN
-      IF (SCABS1(CA).EQ.0.0E+0) RETURN
       IF (INCX.EQ.1 .AND. INCY.EQ.1) THEN
 *
 *        code for both increments equal to 1
 *
          DO I = 1,N
-            CY(I) = CY(I) + CA*CX(I)
+            CTEMP = CTEMP + CX(I)*CY(I)
          END DO
       ELSE
 *
@@ -46,11 +43,11 @@
          IF (INCX.LT.0) IX = (-N+1)*INCX + 1
          IF (INCY.LT.0) IY = (-N+1)*INCY + 1
          DO I = 1,N
-            CY(IY) = CY(IY) + CA*CX(IX)
+            CTEMP = CTEMP + CX(IX)*CY(IY)
             IX = IX + INCX
             IY = IY + INCY
          END DO
       END IF
-*
+      CDOTU = CTEMP
       RETURN
       END
