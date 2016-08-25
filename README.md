@@ -196,8 +196,11 @@ H. Now read the short manual in the Doc/Manual directory and follow the
 # Explanation of directories
 
 Examples : test programs 
+
 Src      : source code
+
 Doc      : documentations
+
 External : external packages
 
 
