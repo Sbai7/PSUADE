@@ -61,19 +61,19 @@ A. To install the PSUADE package, you need to make sure you have cmake on your
 
    Follow the steps below:
 
-   1. mkdir build
-   2. cd build
-   3  if you have a preferred Fortran compiler, you should now set the environment
+   * mkdir build
+   * cd build
+   * if you have a preferred Fortran compiler, you should now set the environment
       variable FC to it (use setenv in c-shell or export in other shells)
-   4. ccmake ..
+   * ccmake ..
       hit 'c'
 
       BUILD_SHARED, MARS, BOBYQA, and METIS should have been selected 
       (for additional packages, contact us).
-
+      
       If you would like to install psuade at a designated location accessible to
       other users, set the installation directory.
-
+      
       hit 'c'
       hit 'c' again until you are able to hit 'g'.
       hit 'g' to generate an exit
@@ -83,7 +83,7 @@ A. To install the PSUADE package, you need to make sure you have cmake on your
       and then open the CMakeCache.txt file and make sure the packages
       MARS (set to on from off), BOBYQA, and METIS are turned on. 
 
-   5. now do a "make" or "make install" if you desire to install it somewhere
+   * now do a "make" or "make install" if you desire to install it somewhere
    
 B. After all compilation is done successfully, the executable "psuade"
    can be found in the bin directory and the libraries will be in 
@@ -97,8 +97,8 @@ C. You can run a simple test by going to the
 
 D. You can also run the built in tests my running 'make test' from the 
    build directory.  WARNINGS:  
-   1. This will take a long time.  At least 20 minutes
-   2. Some tests are expected to fail if you aren't running on LLNL LC
+   * This will take a long time.  At least 20 minutes
+   * Some tests are expected to fail if you aren't running on LLNL LC
       cluster.  PSUADE is very sensitive to the processor it's running on
       and the numeric results will be off on different processors and 
       environment variables.  As long as a few tests pass you're probably OK.
@@ -131,8 +131,8 @@ B. Open a command line window, either powershell of cmd.
 C. You can also run the built in tests my running: 
    c:\mingw\bin\mingw-make.exe test 
    WARNING:
-   1. This will take a long time.  At least 20 minutes
-   2. Some tests are expected to fail on Windows. PSUADE is very sensitive 
+   * This will take a long time.  At least 20 minutes
+   * Some tests are expected to fail on Windows. PSUADE is very sensitive 
       to the processor it's running on and the numeric results will be off 
       on different processors and enviromnet variables.  As long as a few 
       tests pass you're probably OK.
@@ -177,14 +177,14 @@ D. You can run a simple test by going to the
 
 E. You can also run the built in tests my running 'make test' from the
    build directory.  WARNINGS:
-   1. This will take a long time.  At least 20 minutes
-   2. Some tests are expected to fail on MACOSX PSUADE is very sensitive 
+   * This will take a long time.  At least 20 minutes
+   * Some tests are expected to fail on MACOSX PSUADE is very sensitive 
       to the system it's running on, and we get different results on OSX 
       than Linux.  So the following tests are expected to fail:
-          8 - ARSM1 (Failed)
-         10 - Morris20MOAT (Failed)
-         11 - Morris20LH (Failed)
-         12 - MCMCTest (Failed)
+         ** ARSM1 (Failed)
+         ** Morris20MOAT (Failed)
+         ** Morris20LH (Failed)
+         ** MCMCTest (Failed)
 
 F. You can install PSUADE by running 'make install'
 
@@ -195,12 +195,9 @@ H. Now read the short manual in the Doc/Manual directory and follow the
 
 # Explanation of directories
 
-Examples : test programs 
-
-Src      : source code
-
-Doc      : documentations
-
-External : external packages
+* Examples : test programs 
+* Src      : source code
+* Doc      : documentations
+* External : external packages
 
 
