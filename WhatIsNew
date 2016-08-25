@@ -1,0 +1,19 @@
+Version 1.7.6a 
+- lincoa
+- newuoa
+- cobyla (refashioned)
+- PLS
+- add prior heat map to MCMC
+- genHistogram needs help in genSample
+
+Version 1.7.5a 
+- more enhanced MCMC
+- bug fixes
+- other enhancements
+ 
+Version 1.7.4a 
+- optimization under uncertainty
+- enhanced MCMC
+- bug fixes
+- other enhancements
+ 
